@@ -1,0 +1,205 @@
+body{
+    background-image: url(../imagens/fundoanimado.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'VT323', monospace;
+    color:white;
+    font-size: 18px;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh; 
+    padding:30px;  
+}
+
+h1{
+    text-align: center;
+    min-height: 130px;
+}
+
+h1::after {
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+
+span{
+    color:rgb(223, 92, 157)
+}
+
+@keyframes pisca {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.cartao{
+    background-color: #242121;
+    width: 370px;
+    border-radius: 10px;
+    overflow:hidden;
+    border: solid 3px purple;
+    transition:1.5s;
+}
+
+.cartao:hover{
+    border:solid 3px rgb(34, 34, 143);
+}
+
+.abas img{
+    width: 30px;
+}
+
+.minhas-informacoes{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+}
+
+.minhas-informacoes img{
+    max-width: 150px;
+    max-height:150px;
+    border-radius: 80px;
+    border: solid 3px rgb(34, 34, 143);
+    transition: 1.5s;
+    
+}
+
+.minhas-informacoes img:hover{
+    border: solid 3px purple;
+}
+
+.minhas-informacoes img .nome{
+    font-size: 20px;
+    color:gray;
+}
+
+.cartao .abas{
+    display: flex;
+
+}
+
+.cartao .abas .aba{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding:10px;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+.cartao .abas .aba .img-sobre{
+    transition:1.5s;
+}
+
+.cartao .abas .aba .img-sobre:hover{
+    transform: scale(1.5);
+}
+
+.cartao .abas .aba .img-redes{
+    transition:1.5s;
+}
+
+.cartao .abas .aba .img-redes:hover{
+    transform: scale(1.5);
+}
+
+.cartao .abas .aba.selecionado{
+    background:#38393a;
+    
+}
+
+.cartao .informacoes-abas{
+    background:#38393a;
+}
+
+.cartao .abas .aba:hover{
+    background-color: #262729
+}
+
+.informacoes-abas .informacao{
+    min-height: 260px;
+    padding: 15px;
+    display: none;
+}
+
+.informacoes-abas .informacao.selecionado{
+    display:block;
+}
+
+.informacoes-abas .sub-titulo{
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.informacoes-abas .descricao{
+    text-align: justify;
+    max-height: 180px;
+    overflow-y: auto;
+    padding-right: 15px;
+    padding-left: 20px;
+    
+}
+
+.subtitulo{
+    text-align: center;
+    
+}
+
+.redes-sociais{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:25px;
+    align-items: center;
+    padding: 15px;
+    max-height: 180px;
+    overflow-y: auto;
+    
+    
+}
+.redes-sociais li:hover{
+    opacity: 0.8;
+}
+
+.redes-sociais li a{
+    width: 250px;
+    display: block;
+    color:#f3f3f3;
+    text-align: center;
+    padding:10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    transition: opacity 0.8 ease-in-out;
+}
+.redes-sociais li a:hover{
+    opacity:0.8;
+}
+
+.redes-sociais .curriculo{
+    background-color: #06c185;
+}
+
+.redes-sociais .linkedin{
+    background-color: rgb(43, 43, 199);
+}
+
+.redes-sociais .github{
+    background-color: rgb(83, 79, 79);
+}
+
+
+
+
+
