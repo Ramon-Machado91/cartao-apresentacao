@@ -188,15 +188,18 @@ span{
 }
 
 .redes-sociais .curriculo{
-    background-color: #06c185;
+    background-color: purple;
+    border-radius: 10px;
 }
 
 .redes-sociais .linkedin{
     background-color: rgb(43, 43, 199);
+    border-radius: 10px;
 }
 
 .redes-sociais .github{
     background-color: rgb(83, 79, 79);
+    border-radius: 10px;
 }
 
 

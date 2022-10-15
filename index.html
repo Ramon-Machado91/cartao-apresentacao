@@ -23,26 +23,25 @@
             <img src="./src/imagens/foto-perfil.png" alt="Foto perfil">
             <h1 class="nome">Ramon Machado Desenvolvedor Front-End Junior</h1>
             
-            <script src="./src/função/funcao.js"></script>
+          
 
         </div>
 
         <div class="conteudo">
             <ul class="abas">
-                <li class="aba selecionado">
+                <li class="aba selecionado" id="sobre-mim">
                     <img class="img-sobre" src="./src/imagens/sobre.gif" alt="Sobre mim">
                 </li>
-                <li class="aba">
+            
+                <li class="aba" id="minhas-redes">
                     <img class="img-redes" src="./src/imagens/skull.gif" alt="Icones de redes sociais">
                 </li>
 
             </ul>
-        </div>
-
-        <div class="informacoes-abas">
-            <div class="informacao selecionado">
-                <h3 class="sub-titulo"><span>Sobre Mim</span></h3>
-                <div class="descricao">
+            <div class="informacoes-abas">
+                <div class="informacao selecionado" id="informacao-sobre-mim">
+                    <h3 class="sub-titulo"> <span>Sobre Mim</span></h3>
+                    <div class="descricao">
                     <p>Olá visitante! Deixe eu me apresentar, meu nome é <span>Ramon Machado</span>. Atualmente vivo na
                         cidade de Volta Redonda/RJ. 🙋‍♂️</p><br>
                     <p>Sempre fui uma pessoa apaixonada por tecnologia, inovação e temas ligados a Desenvolvimento Web e
@@ -57,18 +56,26 @@
                         gêneros favoritos), jogar videogame e sair com meus amigos,porque ninguém é de ferro. 😂</p><br>
                     <p>Em busca de minha primeira oportunidade profissional e disponível para bater um papo. 💻</p>
                 </div>
-                <div class="informacao">
-                    <h3 class="subtitulo">Minhas redes</h3>
-                    <ul class="redes-sociais">
-                        <li><a href="" target="_blank" class="curriculo">Curriculo</a></li>
-                        <li><a href="" target="_blank" class="linkedin">LinkedIn</a></li>
-                        <li><a href="" target="_blank" class="github">Github</a></li>
-                    </ul>
-                </div>
+            </div>
+            <div class="informacao" id="informacao-minhas-redes">
+                <h3 class="sub-titulo"><span>Minhas Redes</span></h3>
+                <ul class="redes-sociais">
+                    <li>
+                        <a href="" target="_blank" class="curriculo">Currículo</a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/ramon-machado-124065176/" target="_blank" class="linkedin">Linkedln</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Ramon-Machado91" target="_blank" class="github">GitHub</a>
+                    </li>
+                </ul>
             </div>
         </div>
-
-    </main>
+    </div>
+</main>
+<script src="./src/função/funcao.js"></script>
+<script src="./src/função/aba.js"></script>
 </body>
 
 </html>
